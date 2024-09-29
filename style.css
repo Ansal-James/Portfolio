@@ -1,0 +1,58 @@
+
+.full-screen-section {
+    height: 100vh;
+    display: flex;
+    
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .full-screen-section {
+
+        padding: 10px;
+        height: 80vh; /* Adjust height for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .full-screen-section {
+         height: auto;  /* Allow content to dictate height on small screens */
+        padding: 20px; /* Add some padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .full-screen-section {
+        background-color: #333; /* Change background for very small screens */
+        flex-direction: column; /* Stack content vertically */
+    }
+}
+
+.footer {
+    background-color: lemonchiffon;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Adjusts height based on content */
+        padding: 20px; /* Adds padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        text-align: center; /* Centers the text for very small screens */
+        padding: 15px; 
+    }
+}
+
+.bi{
+   font-size: x-large;
+   padding: 20px;
+}
+
